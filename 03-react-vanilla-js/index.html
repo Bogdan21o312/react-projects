@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <title>React vanilla</title>
+</head>
+<body>
+<dic id="react-js"></dic>
+<div id="vanilla-js"></div>
+<script>
+    const reactJsHeading = React.createElement('h1', null, 'Hello from react')
+
+    const container = document.getElementById('react-js')
+    const root = ReactDOM.createRoot(container)
+    root.render(reactJsHeading)
+    console.log(reactJsHeading)
+</script>
+<script>
+    const vanillasJsHeading = document.createElement('h1')
+    vanillasJsHeading.textContent = 'Hello world'
+    document.getElementById('vanilla-js').appendChild(vanillasJsHeading)
+    console.log(vanillasJsHeading)
+</script>
+</body>
+</html>
