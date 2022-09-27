@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <title>Hello-world</title>
+</head>
+<body>
+<dic id="root"></dic>
+<script>
+    const helloWorld = React.createElement('h1', null, 'Hello from react')
+
+    const container = document.getElementById('root')
+    const root = ReactDOM.createRoot(container)
+    root.render(helloWorld)
+</script>
+</body>
+</html>
