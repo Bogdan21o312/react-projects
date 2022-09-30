@@ -1,9 +1,14 @@
 import React from 'react';
 
-const PetInfo = ({ ...props }) => {
+const PetInfo = (props) => {
+    const {animal, age, hasPet} = props
+    const text = hasPet
+        ? `My ${animal} is ${age} old`
+        : 'I don‘t have an animal'
+    console.log(props)
     return (
         <div>
-            My {props.animal} is {props.age} old
+            {text}
         </div>
     );
 };

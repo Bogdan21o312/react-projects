@@ -5,8 +5,8 @@ import PetInfo from "./components/PetInfo";
 const App = () => {
     return (
         <div className="App">
-            <PetInfo animal={'dog'} age={4} />
-            <PetInfo animal={'cat'} age={7} />
+            <PetInfo animal={'dog'} age={4} hasPet={true}/>
+            <PetInfo animal={'cat'} age={7} hasPet={false}/>
         </div>
     );
 };
