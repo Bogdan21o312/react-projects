@@ -9,6 +9,7 @@ h1 {
 }
 
 button {
+    cursor: pointer;
     padding: 1rem 0.5rem;
     background-color: #ffb800;
     color: #0b7373;
